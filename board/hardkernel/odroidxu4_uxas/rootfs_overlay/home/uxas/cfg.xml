@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<!-- By default, this image starts the executable /home/uxas/uxas with this file as its cfgPath; -->
+<!-- replace this with the configuration for your application -->
+
+<UxAS EntityID="100" FormatVersion="1.0" EntityType="None">
+
+    <Service Type="HelloWorld" StringToSend="Hello from #1" SendPeriod_ms="1000"/>
+    <Service Type="HelloWorld" StringToSend="Hello from #2" SendPeriod_ms="5001"/>
+
+</UxAS>

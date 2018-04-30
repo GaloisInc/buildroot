@@ -1,0 +1,14 @@
+#!/bin/sh
+
+case "$1" in
+	start)
+		if [ -f /home/uxas/uxas ]; then daemon --chdir=/home/uxas/run --user=uxas -- /home/uxas/uxas -cfgPath /home/uxas/cfg.xml; fi
+		;;
+        stop)
+                killall -q uxas
+                ;;
+	*)
+		;;
+esac
+
+exit $?
